@@ -1,3 +1,4 @@
+{{ `<!-- hugo: layouts/shortcodes/optfigure.html -->` | safeHTML }}
 {{ $original := .Page.Resources.GetMatch (printf "*%s*.{png,jpg}" (.Get "src")) }}
 {{ $alt := (.Get "alt") }}
 {{ $caption := (.Get "caption") }}
@@ -39,3 +40,4 @@
         </figcaption>
     {{- end }}
 </figure>
+{{ `<!-- /hugo: layouts/shortcodes/optfigure.html -->` | safeHTML }}

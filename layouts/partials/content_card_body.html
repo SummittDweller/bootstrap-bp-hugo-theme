@@ -1,3 +1,4 @@
+{{ `<!-- hugo: layouts/partials/content_card_body.html -->` | safeHTML }}
 <div class="card-body">
     <h1 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h1>
     {{ partial "content_card_body_subtitle.html" . }}
@@ -23,3 +24,4 @@
         <p class="card-text">{{ .Content }}</p>
     {{ end }}
 </div>
+{{ `<!-- /hugo: layouts/partials/content_card_body.html -->` | safeHTML }}

@@ -1,3 +1,4 @@
+{{ `<!-- hugo: layouts/partials/content_card_header.html -->` | safeHTML }}
 {{ if and (eq .Type "video") (not .Site.Config.Privacy.YouTube.Disable) }} 
     <div class="w-100">
         {{ if .Scratch.Get "fullsize" }}
@@ -27,3 +28,4 @@
         {{ end }}
     {{ end }}
 {{ end }}
+{{ `<!-- /hugo: layouts/partials/content_card_header.html -->` | safeHTML }}

@@ -1,4 +1,5 @@
 {{- define "main" -}}
+{{ `<!-- hugo: layouts/_default/list.html -->` | safeHTML }}
 
 {{ $customDateFormat := "02.01.2006" }}
 {{ with .Site.Params.customDateFormat }}{{ $customDateFormat = . }}{{ end }}
@@ -46,4 +47,5 @@
     {{ end }}
 </div>
 
+{{ `<!-- /hugo: layouts/_default/list.html -->` | safeHTML }}
 {{- end -}}

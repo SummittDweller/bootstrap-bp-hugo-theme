@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ `<!-- hugo: layouts/index.html -->` | safeHTML }}
 
 <div class="container mt-3 mb-3">
     {{ $paginator := .Paginate ( where .Site.RegularPages.ByPublishDate.Reverse "Type" "!=" "page") }}
@@ -21,4 +22,5 @@
     {{ template "_internal/pagination.html" . }}
 </div>
 
+{{ `<!-- /hugo: layouts/index.html -->` | safeHTML }}
 {{ end }}

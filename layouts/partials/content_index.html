@@ -1,4 +1,4 @@
-{{ `<!-- hugo: layouts/partials/content_index.html -->` | safeHTML }}
+{{ `<!-- hugo: themes/bootstrap-bp-hugo-theme/layouts/partials/content_index.html -->` | safeHTML }}
 <div class="card">
     {{ $startPageColumns := .Site.Params.startPageColumns }}
     {{ .Scratch.Set "fullsize" (not $startPageColumns) }}
@@ -9,4 +9,4 @@
 
     {{- partial "content_card_footer.html" . -}}
 </div>
-{{ `<!-- /hugo: layouts/partials/content_index.html -->` | safeHTML }}
+{{ `<!-- /hugo: themes/bootstrap-bp-hugo-theme/layouts/partials/content_index.html -->` | safeHTML }}

@@ -1,4 +1,4 @@
-{{ `<!-- hugo: layouts/partials/content_card_body_subtitle.html -->` | safeHTML }}
+{{ `<!-- hugo: themes/bootstrap-bp-hugo-theme/layouts/partials/content_card_body_subtitle.html -->` | safeHTML }}
 {{- $customDateFormat := "02.01.2006" -}}
 {{- with .Site.Params.customDateFormat -}}{{- $customDateFormat = . -}}{{- end -}}
 
@@ -39,4 +39,4 @@
 {{- if gt $card_subtitle_length 0 -}}
 <h6 class="card-subtitle mb-2 text-muted">{{ delimit $card_subtitle_data " - " | safeHTML }}</h6>
 {{- end -}}
-{{ `<!-- /hugo: layouts/partials/content_card_body_subtitle.html -->` | safeHTML }}
+{{ `<!-- /hugo: themes/bootstrap-bp-hugo-theme/layouts/partials/content_card_body_subtitle.html -->` | safeHTML }}

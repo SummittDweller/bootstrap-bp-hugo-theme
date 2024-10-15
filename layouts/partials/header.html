@@ -1,4 +1,4 @@
-{{ `<!-- hugo: layouts/partials/header.html -->` | safeHTML }}
+{{ `<!-- hugo: themes/bootstrap-bp-hugo-theme/layouts/partials/header.html -->` | safeHTML }}
 {{ $alwaysExpandMenu := "" }}
 {{ if and (.Site.Params.alwaysExpandMenu) (eq .Site.Params.alwaysExpandMenu true) }}
     {{ $alwaysExpandMenu = "navbar-expand-lg" }}
@@ -39,4 +39,4 @@
         </div>
     </div>
 </nav>
-{{ `<!-- /hugo: layouts/partials/header.html -->` | safeHTML }}
+{{ `<!-- /hugo: themes/bootstrap-bp-hugo-theme/layouts/partials/header.html -->` | safeHTML }}
